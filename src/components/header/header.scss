@@ -1,0 +1,17 @@
+@use "../styles/variables" as*;
+
+.header{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+
+nav{
+    display: flex;
+    gap: 40px;
+
+    .nav-link{
+        color: black;
+        font-family: $font-family;
+    }
+}
+}
