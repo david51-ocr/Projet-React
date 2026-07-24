@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/header'
-import Home from './page'
+import Home from './page/Home'
+import About from './page/About'
 import './App.css'
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     <Header />
       <Routes>
         <Route path="/"  element={<Home/>}/>
-        <Route path="/about"  />
+        <Route path="/about" element={<About/>} />
         </Routes>
         </Router>
         )
