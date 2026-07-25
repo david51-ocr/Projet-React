@@ -16,7 +16,7 @@ function Home() {
         {logements.map((logement) => (
           <Card
             key={logement.id}
-            titre={logement.name}
+            titre={logement.title}
             image={logement.cover}
           />
         ))}

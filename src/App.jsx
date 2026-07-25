@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/header'
 import Home from './page/Home'
 import About from './page/About'
+import Error from './page/Error'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/"  element={<Home/>}/>
         <Route path="/about" element={<About/>} />
+        <Route path="*" element={<Error />} />
         </Routes>
         </Router>
         )
