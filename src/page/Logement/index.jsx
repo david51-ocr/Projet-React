@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Collapse from "../../components/Collapse";
+import Gallery from "../../components/Gallery";
 import Error from "../Error";
 
 
@@ -21,6 +22,7 @@ function Logement() {
 
   return (
     <main>
+      <Gallery pictures = {logement.pictures}/>
       <h1>{logement.title}</h1>
       <h2>{logement.location}</h2>
       <p>{logement.tags}</p>
