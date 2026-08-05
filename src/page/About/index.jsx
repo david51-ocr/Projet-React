@@ -1,9 +1,11 @@
 import Collapse from "../../components/Collapse";
-
+import paysage from "../../assets/paysage.png"
+import "../../styles/about.scss"
 function About() {
   return (
     <main>
       <section className="about">
+        <img src={paysage} alt="paysage" />
         <Collapse
           titre="Fiabilité"
           contenu="Les annonces postées sur Kasa garantissent une fiabilité totale."

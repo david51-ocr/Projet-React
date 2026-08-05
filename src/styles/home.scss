@@ -1,0 +1,40 @@
+@use "../styles/variables" as*;
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 56px 50px;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    
+
+    .card-link{
+        width: calc((100% - 100px)/3);
+        text-decoration: none;
+
+        .card{
+            position: relative;
+            width: 100%;
+            height: 340px;
+            overflow: hidden;
+            border-radius: 10px;
+
+            h2{
+                font-family: $font-family;
+                font-size: 18px;
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                color: white;
+            }
+        
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    }
+    
+}

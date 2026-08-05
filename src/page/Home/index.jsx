@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Card from "../../components/Card"
-
+import "../../styles/home.scss"
 function Home() {
   const [logements, setLogements] = useState([]);
 
@@ -14,7 +14,7 @@ function Home() {
     <main>
       <section className="gallery">
         {logements.map((logement) => (
-          <Card
+          <Card 
             key={logement.id}
             id={logement.id}
             titre={logement.title}

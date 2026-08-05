@@ -1,10 +1,11 @@
 @use "../styles/variables" as*;
 
+
 .header{
     display: flex;
 justify-content: space-between;
 align-items: center;
-
+margin-bottom: 40px;
 nav{
     display: flex;
     gap: 40px;
@@ -12,6 +13,10 @@ nav{
     .nav-link{
         color: black;
         font-family: $font-family;
+        text-decoration: none;
+        &.active{
+            text-decoration: underline;
+        }
     }
 }
 }

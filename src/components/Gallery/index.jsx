@@ -3,6 +3,8 @@ import { useState } from "react";
 
 function Gallery({pictures}){
     const [imageIndex, setImageIndex] = useState(0);
+
+    
    function suivant() {
     if (imageIndex === pictures.length - 1) {
         setImageIndex(0);
