@@ -26,7 +26,7 @@ function Collapse({ titre, contenu }) {
                 : "collapse__content "
         }
     >
-        <p>{contenu}</p>
+      {contenu}
     </div>
     </article>
   );
