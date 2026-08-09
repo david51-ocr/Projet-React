@@ -19,7 +19,6 @@ function Collapse({ titre, contenu }) {
 
       </button>
 
-      
     <div
         className={
             isOpen

@@ -6,6 +6,7 @@ import About from './page/About'
 import Error from './page/Error'
 import Logement from './page/Logement'
 import './App.css'
+import Footer from './components/Footer'
 
 function App() {
   return(
@@ -17,6 +18,7 @@ function App() {
         <Route path="/logement/:id" element={<Logement />} />
         <Route path="*" element={<Error />} />
         </Routes>
+        <Footer />
         </Router>
         )
 }

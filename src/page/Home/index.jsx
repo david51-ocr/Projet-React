@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from "../../components/Card"
 import "../../styles/home.scss"
+import Image from "../../assets/Img-header.png"
 function Home() {
   const [logements, setLogements] = useState([]);
 
@@ -12,6 +13,10 @@ function Home() {
 
   return (
     <main>
+      <div className="bannerAccueil">
+  <img src={Image} alt="Paysage accueil" />
+  <h1>Chez vous, partout et ailleurs</h1>
+</div>
       <section className="gallery">
         {logements.map((logement) => (
           <Card 
