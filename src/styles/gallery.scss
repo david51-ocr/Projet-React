@@ -36,9 +36,7 @@
     position: absolute;
     bottom: 25px;
     left: 50%;
-
     transform: translateX(-50%);
-
     color: white;
     font-size: 18px;
     font-weight: 500;
@@ -49,12 +47,11 @@
   .gallery-logement {
     height: 255px;
     border-radius: 10px;
-
     &__previous,
     &__next {
       font-size: 24px;
     }
-
+    
     &__previous {
       left: 10px;
     }

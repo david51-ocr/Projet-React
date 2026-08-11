@@ -1,11 +1,11 @@
-@use "../styles/variables" as *;
+@use "../styles/variables"as *;
 
 .about {
     max-width: 1240px;
     margin: 0 auto;
     padding: 0 40px 40px;
 
-    > img {
+    img {
         width: 100%;
         height: 223px;
         object-fit: cover;
@@ -19,10 +19,15 @@
     .about {
         padding: 0 20px 20px;
 
-        > img {
+        >img {
             height: 223px;
             margin-bottom: 20px;
             border-radius: 10px;
         }
+        .aboutCollapse {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+  }
     }
 }

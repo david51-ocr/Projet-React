@@ -37,33 +37,21 @@
     opacity: 0;
     overflow: hidden;
     background-color: #f6f6f6;
+    color: black;
     border-radius: 0 0 10px 10px;
+    text-align: left;
     transition:
       max-height 0.4s ease,
       opacity 0.3s ease,
       padding 0.4s ease;
 
-    p {
-      margin: 0;
-      color: black;
-      font-family: $font-family;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 1.5;
-      opacity: 0;
-      transition:
-        opacity 0.3s ease,
-        transform 0.3s ease;
-    }
 
     &.open {
       max-height: 500px;
       padding: 20px;
       opacity: 1;
 
-      p {
-        opacity: 1;
-      }
+      
     }
   }
 }
@@ -82,11 +70,9 @@
         }
 
         &__content {
-            padding: 15px;
+            font-size: 12px;
 
-            p {
-                font-size: 12px;
-            }
+          
         }
     }
 }

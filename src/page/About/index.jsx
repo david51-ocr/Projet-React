@@ -6,6 +6,7 @@ function About() {
     <main>
       <section className="about">
         <img src={paysage} alt="paysage" />
+        <section className="aboutCollapse">
         <Collapse
           titre="Fiabilité"
           contenu="Les annonces postées sur Kasa garantissent une fiabilité totale."
@@ -25,6 +26,7 @@ function About() {
           titre="Sécurité"
           contenu="La sécurité est la priorité de Kasa."
         />
+        </section>
       </section>
     </main>
   );
